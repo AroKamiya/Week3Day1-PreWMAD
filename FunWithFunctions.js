@@ -137,7 +137,7 @@ const reverseString = function(str) {
   var splitReverseString = str.split();
   var reverseStringArray = splitReverseString.reverse();
   var joinArray = reverseStringArray.join();
-  return joinArray;
+  return console.log();
 }
 
 reverseString("hello");
