@@ -14,9 +14,10 @@
 // Function one: should have two parameters, meaning it will take two arguments. 
 // Should add two numbers, and console.log the result.
 
-const addTwoNumbers = function() {
+const addTwoNumbers = function(x, y) {
 
-  //Your code goes here
+  let addResult = x + y;
+  console.log(addResult);
 
 }
 
@@ -24,9 +25,10 @@ const addTwoNumbers = function() {
 // Function Two: should have two parameters, meaning it will take two arguments. 
 // Should multiply the two numbers, and console.log the result.
 
-const multiplyTwoNumbers = function() {
+const multiplyTwoNumbers = function(x, y) {
 
-  //Your code goes here
+  let multiplyResult = x * y;
+  console.log(multiplyResult);
 
 }
 
@@ -34,9 +36,10 @@ const multiplyTwoNumbers = function() {
 // Function Three: should have two parameters, meaning it will take two arguments. 
 // Should divide the first argument by the second, and console.log the result.
 
-const divideXByY = function() {
+const divideXByY = function(x, y) {
 
-  //Your code goes here
+  let devideResult = x / y;
+  console.log(devideResult);
 
 }
 
@@ -45,9 +48,10 @@ const divideXByY = function() {
 // The first argument will be the total amount in dollars and cents (ex. 10.25) and the second will be the percentage of tax charged (ex. 5).
 // calculate the toal price (the amount, + the percentage)
 
-const calculateTax = function() {
+const calculateTax = function(x, t) {
 
-  //Your code goes here
+  let totalCalculateTax = x + (x * t / 100);
+  console.log(totalCalculateTax);
 
 }
 
@@ -57,25 +61,30 @@ const calculateTax = function() {
 
 const printNumbersToTen = function() {
 
-  //Your code goes here
+  for(i = 0; i <= 10; i++){
+    console.log(i);
+  }
 
 }
 
 // Function six: should have 1 parameter, meaning it will take 1 arguments. 
 // log to the console the numbers from 1, to whatever number is given as an argument (x), one line at a time
 
-const printNumbersToX = function() {
+const printNumbersToX = function(x) {
 
-  //Your code goes here
+  for(i = 0; i <= x; i++){
+    console.log(i, x);
+  }
 
 }
 
 // Function seven: should have 2 parameters, meaning it will take 2 arguments. 
 // log to the console the two strings given, added together, with a space in between
 
-const addStrings = function() {
+const addStrings = function(w1, w2) {
 
-  //Your code goes here
+  let addString = w1 + " " + w2;
+  console.log(addString);
 
 }
 
@@ -87,8 +96,17 @@ const addStrings = function() {
 
 const fizzBuzz = function() {
 
-  //Your code goes here
-
+  for(let i = 0; i <= 100; i++){
+      if(i % 3 === 0 && i % 5 === 0){
+         console.log(i + " buzz fizz");
+      }else if(i % 3 === 0){
+        console.log(i + " fizz");
+      }else if(i % 5 === 0){
+        console.log(i + " buzz");
+      }else{
+        console.log(i);
+      }
+  }
 }
 
 // Function nine: should have 1 parameter, meaning it will take 1 arguments. 
@@ -96,10 +114,18 @@ const fizzBuzz = function() {
 // for every number that is a multiple of 3, print the word "fizz", and for every multiple of 5
 // print the word "buzz"
 
-const paramFizzBuzz = function() {
-
-  //Your code goes here
-
+const paramFizzBuzz = function(x) {
+  for(let i =0; i <= x; i++){
+      if(i % 3 === 0 && i % 5 === 0){
+        console.log(i + " buzz fizz");
+     }else if(i % 3 === 0){
+       console.log(i + " fizz");
+     }else if(i % 5 === 0){
+       console.log(i + " buzz");
+     }else{
+       console.log(i);
+     }
+  }
 }
 
 
@@ -107,66 +133,68 @@ const paramFizzBuzz = function() {
 // Function ten, Bonus: should have 1 parameter, meaning it will take 1 arguments. 
 // log to the console the reverse of the given string
 
-const reverseString= function() {
-
-  //Your code goes here
-
+const reverseString = function(str) {
+  var splitReverseString = str.split();
+  var reverseStringArray = splitReverseString.reverse();
+  var joinArray = reverseStringArray.join();
+  return joinArray;
 }
 
+reverseString("hello");
 
 //should = 6
-// addTwoNumbers(1, 5) 
+addTwoNumbers(1, 5) 
 
 //should = -3
-// addTwoNumbers(1, -4) 
+ addTwoNumbers(1, -4) 
 
 //should = 120
-// addTwoNumbers(20, 100) 
+addTwoNumbers(20, 100) 
 
 
 
 // should = 10
-// multiplyTwoNumbers(2, 5)
+multiplyTwoNumbers(2, 5)
 // 
 
 
 // should = 100
-// multiplyTwoNumbers(20, 5)
+multiplyTwoNumbers(20, 5)
 // 
 
 
 // should = 4
-// divideXByY(20, 5)
+divideXByY(20, 5)
 
 
 // should = 6
-// divideXByY(36, 6)
+divideXByY(36, 6)
 
 
 // should = 11
-// calculateTax(10, 10)
+calculateTax(10, 10)
 
 // should = 120
-// calculateTax(100, 20)
+calculateTax(100, 20)
 
-//  printNumbersToTen()
+printNumbersToTen()
 
-// printNumbersToX(5)
+printNumbersToX(5)
 
-// printNumbersToX(45)
+printNumbersToX(45)
 
-// printNumbersToX(10)
+printNumbersToX(10)
 
 // should print = 'hello world'
-// addStrings("hello", "world")
+addStrings("hello", "world")
 
-// fizzBuzz()
+fizzBuzz()
 
 // paramFizzbuzz(25);
 
 // paramFizzbuzz(75);
 
-// paramFizzbuzz(47);
+paramFizzBuzz(47);
 
 
 
