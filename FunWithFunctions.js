@@ -134,37 +134,37 @@ const paramFizzBuzz = function(x) {
 // log to the console the reverse of the given string
 
 const reverseString = function(str) {
-  var splitReverseString = str.split();
+  var splitReverseString = str.split('');
   var reverseStringArray = splitReverseString.reverse();
-  var joinArray = reverseStringArray.join();
-  return console.log();
+  var joinArray = reverseStringArray.join('');
+  return console.log(joinArray);
 }
 
 reverseString("hello");
 
 //should = 6
-addTwoNumbers(1, 5) 
+// addTwoNumbers(1, 5) 
 
 //should = -3
- addTwoNumbers(1, -4) 
+//  addTwoNumbers(1, -4) 
 
 //should = 120
-addTwoNumbers(20, 100) 
+// addTwoNumbers(20, 100)
 
 
 
 // should = 10
-multiplyTwoNumbers(2, 5)
+// multiplyTwoNumbers(2, 5)
 // 
 
 
 // should = 100
-multiplyTwoNumbers(20, 5)
+// multiplyTwoNumbers(20, 5)
 // 
 
 
 // should = 4
-divideXByY(20, 5)
+// divideXByY(20, 5)
 
 
 // should = 6
@@ -172,29 +172,29 @@ divideXByY(36, 6)
 
 
 // should = 11
-calculateTax(10, 10)
+// calculateTax(10, 10)
 
 // should = 120
-calculateTax(100, 20)
+// calculateTax(100, 20)
 
-printNumbersToTen()
+// printNumbersToTen()
 
-printNumbersToX(5)
+// printNumbersToX(5)
 
-printNumbersToX(45)
+// printNumbersToX(45)
 
-printNumbersToX(10)
+// printNumbersToX(10)
 
 // should print = 'hello world'
-addStrings("hello", "world")
+// addStrings("hello", "world")
 
-fizzBuzz()
+// fizzBuzz()
 
 // paramFizzbuzz(25);
 
 // paramFizzbuzz(75);
 
-paramFizzBuzz(47);
+// paramFizzBuzz(47);
 
 
 
